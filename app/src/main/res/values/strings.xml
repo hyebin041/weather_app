@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">my_application_app</string>
+    <string name="meta_test_str">meta-data Test!!!!</string>
 </resources>

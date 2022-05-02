@@ -8,6 +8,14 @@
 
     android:orientation="vertical">
 
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </FrameLayout>
+
     <me.relex.circleindicator.CircleIndicator
         android:id="@+id/indicator"
         app:ci_drawable="@drawable/black_radius"
@@ -16,6 +24,8 @@
         app:ci_margin="4dp"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+
+        android:layout_marginTop="40dp"
         />
 
     <androidx.viewpager.widget.ViewPager

@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.My_application_app">
         <activity
+            android:name=".menu_third"
+            android:exported="true" />
+        <activity
+            android:name=".menu_second"
+            android:exported="true" />
+        <activity
+            android:name=".menu_first"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity_SHOPLIST"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity3"
             android:exported="true" />
         <activity
