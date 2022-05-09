@@ -36,6 +36,7 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+
     //noinspection GradleCompatible
     implementation 'com.android.support:support-v4:25.1.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
