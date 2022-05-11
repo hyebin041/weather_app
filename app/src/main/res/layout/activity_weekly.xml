@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="수원시 주간날씨"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/location"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="50dp"
+            android:textSize="27sp"
+            android:fontFamily="@font/im_hyemin_bold"
+            android:textColor="#0B4C5F" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/ping"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_marginTop="40dp">
+        <TableLayout
+            android:stretchColumns="*"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F6CEEC">
+
+                    <TextView
+                        android:id="@+id/empty"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/monday"
+                        android:layout_width="108dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="월"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+
+                    <TextView
+                        android:id="@+id/tuesday"
+                        android:layout_width="108dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="화"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+
+                    <TextView
+                        android:id="@+id/wednesday"
+                        android:layout_width="108dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="수"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+
+                    <TextView
+                        android:id="@+id/thursday"
+                        android:layout_width="108dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="목"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+
+                    <TextView
+                        android:id="@+id/friday"
+                        android:layout_width="108dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="금"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+
+                    <TextView
+                        android:id="@+id/saturday"
+                        android:layout_width="108dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="토"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+
+                    <TextView
+                        android:id="@+id/sunday"
+                        android:layout_width="108dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="일"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_launcher_foreground"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_launcher_foreground" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_launcher_foreground" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_launcher_foreground"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_launcher_foreground"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_launcher_foreground"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="108dp">
+
+                    <TextView
+                        android:id="@+id/empty2"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/m_temp"
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="8도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/tus_temp"
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="7도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/wed_temp"
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="9도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/thur_temp"
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="9도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/fri_temp"
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="4도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/sat_temp"
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="3도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/sun_temp"
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="5도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="108dp">
+
+                    <TextView
+                        android:id="@+id/empty3"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/m_real_temp"
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="6도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular" />
+                    <TextView
+                        android:id="@+id/tus_real_temp"
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="10도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/wed_real_temp"
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="12도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/thur_real_temp"
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="11도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/fri_real_temp"
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="6도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/sat_real_temp"
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="2도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/empty4"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=""
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/mon_1"
+                        android:layout_width="108dp"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="8도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/tus_1"
+                        android:layout_width="108dp"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="7도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/wed_1"
+                        android:layout_width="108dp"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="9도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/thur_1"
+                        android:layout_width="108dp"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="9도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/fri_1"
+                        android:layout_width="108dp"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="4도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/sat_1"
+                        android:layout_width="108dp"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="3도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                    <TextView
+                        android:id="@+id/sun_1"
+                        android:layout_width="108dp"
+                        android:layout_height="35dp"
+                        android:gravity="center"
+                        android:text="5도"
+                        android:textSize="30dp"
+                        android:fontFamily="@font/im_hyemin_regular"/>
+                </TableRow>
+            </LinearLayout>
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/img_theme"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@mipmap/um2" />
+
+
+</LinearLayout>

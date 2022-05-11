@@ -27,8 +27,8 @@ public class FirstFragment extends Fragment {
         title = getArguments().getString("someTitle");
     }
 
-    @Override
+    /*@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.fragment_first);
-    }
+       //View view = inflater.inflate();
+    }*/
 }

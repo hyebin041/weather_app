@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,6 +36,15 @@ public class MainActivity extends AppCompatActivity {
         indicator.setViewPager(vpPager);
 
         Intent intent1 = new Intent(getApplicationContext(), menu_first.class);
+
+        Button weekly_button = findViewById(R.id.button_weekely);
+        weekly_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_weekly = new Intent(getApplicationContext(), Weekly.class);
+                startActivity(intent_weekly);
+            }
+        });
     }
 
     public static class MyPagerAdapter extends FragmentPagerAdapter{
@@ -54,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 case 0:
                     return FirstFragment.newInstance(0, "Pager # 1");
                 case 1:
-                    return SecondFragmnet.newInstance(1, "Pager # 2");
+                    return SecondFragment.newInstance(1, "Pager # 2");
                 case 2:
                     return ThirdFragment.newInstance(2, "Pager # 3");
                 default:

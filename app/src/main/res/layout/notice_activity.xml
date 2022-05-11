@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rGroup1"
+        android:layout_weight="2"
+        android:visibility="visible"
+        android:layout_marginLeft="10dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdoCal"
+            android:text="날짜 설정 (캘린더뷰)" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdoTime"
+            android:text="시간 설정" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdoWea"
+            android:text="날씨 설정" />
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight = "5">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CalendarView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id = "@+id/calendarView1"
+                android:showWeekNumber = "false"
+                android:layout_gravity="center|top"/>
+            <TimePicker
+                android:id="@+id/timePicker1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TableLayout
+                    android:id="@+id/wt_table"
+                    android:stretchColumns="*"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="0dp">
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <CheckBox
+                            android:id="@+id/ck_snow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="눈이 오는 날 "
+                            android:layout_gravity="center"
+                            android:checked="false"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/ck_rain"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="비가 오는 날 "
+                            android:layout_gravity="center"
+                            android:checked="false"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <CheckBox
+                            android:id="@+id/ck_dust"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="미세먼지 심한 날 "
+                            android:layout_gravity="center"
+                            android:checked="false"/>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background = "#CCCCCC"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id= "@+id/btnEnd"
+            android:text= "예약완료"    />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/tvYear"
+            android:text = "0000"   />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "년"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id= "@+id/tvMonth"
+            android:text = "00"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "월"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id= "@+id/tvDay"
+            android:text = "00"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "일"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id= "@+id/tvHour"
+            android:text = "00"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "시"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id= "@+id/tvMinute"
+            android:text = "00"  />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "분"  />
+
+    </LinearLayout>
+
+</LinearLayout>
